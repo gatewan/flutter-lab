@@ -86,7 +86,7 @@ class _State extends State<SplashPage> {
             SizedBox(
                 height: 100
             ),
-            Text("v $version"),
+            Text("v.$version"),
           ],
         ),
       ),
