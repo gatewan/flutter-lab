@@ -1,10 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
   @override
+  State<StatefulWidget> createState() => _State();
+}
+
+class _State extends State<SplashPage> {
+  var version = "";
+
+  readVersion() {
+    PackageInfo.fromPlatform().then((value) {
+      setState(() {
+        version = value.version;
+      });
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    readVersion();
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -66,6 +83,10 @@ class SplashPage extends StatelessWidget {
               onPressed: () {},
               child: Text("OPEN"),
             ),
+            SizedBox(
+                height: 100
+            ),
+            Text("v $version"),
           ],
         ),
       ),
