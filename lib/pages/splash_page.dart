@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/pages/home_page.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 class SplashPage extends StatefulWidget {
@@ -80,7 +81,12 @@ class _State extends State<SplashPage> {
                   fontSize: 16,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
               child: Text("OPEN"),
             ),
             SizedBox(
