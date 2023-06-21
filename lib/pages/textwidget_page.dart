@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/pages/textwidget_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class TextWidgetPage extends StatelessWidget {
+  const TextWidgetPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 15, left: 24),
             child: Text(
-              "To-Do List",
+              "Text Widget",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
@@ -23,7 +22,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Text(
-              "Familiar with flutter components is the most exciting thing for programming UI/UX",
+              "The Text widget displays a string of text with single style. The string might break across multiple lines or might all be displayed on the same line depending on the layout constraints.",
               style: TextStyle(
                 fontWeight: FontWeight.normal,
                 color: Colors.grey,
@@ -36,33 +35,12 @@ class HomePage extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const TextWidgetPage()),
-                );
-              },
-              child: Card(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    const ListTile(
-                      title: Text("Explore TextView"),
-                    )
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
             child: Card(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore ImageView"),
+                    title: Text("Default"),
                   )
                 ],
               ),
@@ -75,7 +53,10 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore ScrollView"),
+                    title: Text(
+                      "Itallic",
+                      style: TextStyle(fontStyle: FontStyle.italic),
+                    ),
                   )
                 ],
               ),
@@ -88,7 +69,12 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore ListView"),
+                    title: Text(
+                      "Underline",
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
                   )
                 ],
               ),
@@ -101,7 +87,10 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore TableView"),
+                    title: Text(
+                      "Bold",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   )
                 ],
               ),
@@ -114,7 +103,10 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore Column"),
+                    title: Text(
+                      "Light",
+                      style: TextStyle(fontWeight: FontWeight.w200),
+                    ),
                   )
                 ],
               ),
@@ -127,20 +119,10 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text("Explore Stack"),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    title: Text("Explore TextField"),
+                    title: Text(
+                      "Colors",
+                      style: TextStyle(color: Colors.deepOrangeAccent),
+                    ),
                   )
                 ],
               ),
