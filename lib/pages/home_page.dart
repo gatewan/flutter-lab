@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lab/pages/buttonwidget_page.dart';
+import 'package:flutter_lab/pages/stackwidget_page.dart';
 import 'package:flutter_lab/pages/textwidget_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -144,14 +145,22 @@ class HomePage extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    title: Text("Explore Stack"),
-                  )
-                ],
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const StackWidgetPage()),
+                );
+              },
+              child: Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const ListTile(
+                      title: Text("Explore Stack"),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
