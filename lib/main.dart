@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/pages/home_page.dart';
 import 'package:flutter_lab/pages/splash_page.dart';
-import 'package:flutter_lab/pages/stackwidget_page.dart';
-import 'package:flutter_lab/pages/textwidget_page.dart';
 
 void main() {
   runApp(const MyApp());

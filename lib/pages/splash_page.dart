@@ -25,14 +25,14 @@ class _State extends State<SplashPage> {
     readVersion();
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 120,
             ),
-            Text(
+            const Text(
               "Welcome to MyCodelab",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class _State extends State<SplashPage> {
               textWidthBasis: TextWidthBasis.parent,
               textAlign: TextAlign.center,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 24,
                 vertical: 20,
@@ -57,27 +57,27 @@ class _State extends State<SplashPage> {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 32,
             ),
             Image.asset(
               "assets/images/welcome_splash.png",
               width: 320,
             ),
-            SizedBox(
+            const SizedBox(
               height: 120,
             ),
             TextButton(
               style: TextButton.styleFrom(
                 foregroundColor: Colors.white,
                 backgroundColor: Colors.deepPurpleAccent,
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 52,
                   vertical: 8,
                 ),
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontSize: 16,
                 ),
               ),
@@ -87,9 +87,9 @@ class _State extends State<SplashPage> {
                   MaterialPageRoute(builder: (context) => const HomePage()),
                 );
               },
-              child: Text("OPEN"),
+              child: const Text("OPEN"),
             ),
-            SizedBox(
+            const SizedBox(
                 height: 100
             ),
             Text("v.$version"),

@@ -9,7 +9,7 @@ class ButtonWidgetPage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: ListView(
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 15, left: 24),
             child: Text(
               "Button Widget",
@@ -19,7 +19,7 @@ class ButtonWidgetPage extends StatelessWidget {
                   fontSize: 40),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             child: Text(
               "Buttons are the graphical control element that provides a user to trigger an event such as taking actions, making choices, searching things, and many more. They can be placed anywhere in our UI like dialogs, forms, cards, toolbars, etc.",
@@ -30,18 +30,18 @@ class ButtonWidgetPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
             child: Card(
                 child: InkWell(
                   splashColor: Colors.blue,
                   onTap: () {
                     debugPrint("Card clickable");
                   },
-                  child: SizedBox(
+                  child: const SizedBox(
                     width: 200,
                     height: 100,
                     child: Center(child: Text("Default")),
@@ -49,7 +49,7 @@ class ButtonWidgetPage extends StatelessWidget {
                 )),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
             child: Card(
               shape: RoundedRectangleBorder(
                 side: BorderSide(
@@ -73,7 +73,7 @@ class ButtonWidgetPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
             child: Card(
               color: Colors.amberAccent,
               clipBehavior: Clip.hardEdge,
@@ -82,7 +82,7 @@ class ButtonWidgetPage extends StatelessWidget {
                 onTap: () {
                   debugPrint("Card clickable");
                 },
-                child: SizedBox(
+                child: const SizedBox(
                   width: 200,
                   height: 100,
                   child: Center(child: Text("Colors")),
@@ -90,12 +90,12 @@ class ButtonWidgetPage extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 10, left: 24, right: 24),
             child: Text("Image Button"),
           ),
           Padding(
-            padding: EdgeInsets.only(right: 24, left: 24, bottom: 24),
+            padding: const EdgeInsets.only(right: 24, left: 24, bottom: 24),
             child: Card(
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
@@ -112,10 +112,10 @@ class ButtonWidgetPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 5),
             child: TextButton(
               style: TextButton.styleFrom(
-                textStyle: TextStyle(fontSize: 20),
+                textStyle: const TextStyle(fontSize: 20),
               ),
               onPressed: (){
                 debugPrint("Text Button clickable");
@@ -123,7 +123,7 @@ class ButtonWidgetPage extends StatelessWidget {
               onLongPress: (){
                 debugPrint("Text Button on LongPress");
               },
-              child: Text('Text Button'),
+              child: const Text('Text Button'),
             ),
           ),
         ],

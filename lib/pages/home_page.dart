@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
           child: Stack(
             alignment: Alignment.topLeft,
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 width: 1000,
                 height: 1000,
                 child: Padding(
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 1000,
                 height: 1000,
                 child: Padding(
@@ -47,18 +47,18 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               SizedBox(
                   width: 1000,
                   height: 1000,
                   child: Padding(
-                    padding: EdgeInsets.only(top: 170, left: 4),
+                    padding: const EdgeInsets.only(top: 170, left: 4),
                     child: ListView(children: [
                       Padding(
                         padding:
-                            EdgeInsets.only(left: 16, right: 16, bottom: 5),
+                            const EdgeInsets.only(left: 16, right: 16, bottom: 5),
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                                   builder: (context) => const TextWidgetPage()),
                             );
                           },
-                          child: Card(
+                          child: const Card(
                             child: Padding(
                               padding: EdgeInsets.symmetric(
                                   vertical: 18, horizontal: 14),
@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                            const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
                                       const ButtonWidgetPage()),
                             );
                           },
-                          child: Card(
+                          child: const Card(
                             child: Padding(
                               padding: EdgeInsets.symmetric(
                                   vertical: 18, horizontal: 14),
@@ -107,7 +107,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
@@ -123,14 +123,14 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore ScrollView"),
                               )
                             ],
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                            const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -148,11 +148,11 @@ class HomePage extends StatelessWidget {
                                   builder: (context) => const ListViewPage()),
                             );
                           },
-                          child: Card(
+                          child: const Card(
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
-                                const ListTile(
+                                ListTile(
                                   title: Text("Explore ListView"),
                                 )
                               ],
@@ -160,42 +160,42 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore TableView"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore Column"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore Row"),
                               )
                             ],
@@ -204,7 +204,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                            const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -214,11 +214,11 @@ class HomePage extends StatelessWidget {
                                       const StackWidgetPage()),
                             );
                           },
-                          child: Card(
+                          child: const Card(
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
-                                const ListTile(
+                                ListTile(
                                   title: Text("Explore Stack"),
                                 )
                               ],
@@ -226,76 +226,76 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore TextField"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore More"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore Others"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore Further"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
                           child: Column(
                             children: <Widget>[
-                              const ListTile(
+                              ListTile(
                                 title: Text("Explore bodyProperties"),
                               )
                             ],
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                     ]),

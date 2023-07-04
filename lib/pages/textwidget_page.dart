@@ -8,7 +8,7 @@ class TextWidgetPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
-        children: [
+        children: const [
           Padding(
             padding: EdgeInsets.only(top: 15, left: 24),
             child: Text(
@@ -39,7 +39,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text("Default"),
                   )
                 ],
@@ -52,7 +52,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text(
                       "Itallic",
                       style: TextStyle(fontStyle: FontStyle.italic),
@@ -68,7 +68,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text(
                       "Underline",
                       style: TextStyle(
@@ -86,7 +86,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text(
                       "Bold",
                       style: TextStyle(fontWeight: FontWeight.bold),
@@ -102,7 +102,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text(
                       "Light",
                       style: TextStyle(fontWeight: FontWeight.w200),
@@ -118,7 +118,7 @@ class TextWidgetPage extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
+                  ListTile(
                     title: Text(
                       "Colors",
                       style: TextStyle(color: Colors.deepOrangeAccent),

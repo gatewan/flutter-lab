@@ -22,7 +22,7 @@ class StackWidgetPage extends StatelessWidget {
               height: 550,
               color: Colors.green,
             ),
-            Container(
+            const SizedBox(
                 width: 350,
                 height: 550,
                 child: Padding(
@@ -45,7 +45,7 @@ class StackWidgetPage extends StatelessWidget {
               height: 285,
               color: Colors.amberAccent,
             ),
-            Container(
+            const SizedBox(
               width: 245,
               height: 245,
               child: Padding(

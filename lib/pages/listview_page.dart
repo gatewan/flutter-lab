@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class ListViewPage extends StatelessWidget {
@@ -9,13 +7,14 @@ class ListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
             width: double.infinity,
             height: 100,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [
+              children: const [
                 Padding(
                   padding: EdgeInsets.all(8),
                   child: Card(
@@ -70,11 +69,60 @@ class ListViewPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: double.infinity,
-            width: double.infinity,
+            width: 100,
+            height: MediaQuery.of(context).size.height - 100,
             child: ListView(
-              shrinkWrap: true,
-              children: [
+              children: const [
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                    ),
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.all(8),
                   child: Card(
