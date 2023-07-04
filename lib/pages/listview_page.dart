@@ -22,6 +22,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("1"),
                     ),
                   ),
                 ),
@@ -32,6 +33,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("2"),
                     ),
                   ),
                 ),
@@ -42,6 +44,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("3"),
                     ),
                   ),
                 ),
@@ -52,6 +55,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("4"),
                     ),
                   ),
                 ),
@@ -62,6 +66,62 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("5"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                      child: Text("6"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                      child: Text("7"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                      child: Text("8"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                      child: Text("9"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Card(
+                    color: Colors.grey,
+                    child: SizedBox(
+                      width: 76,
+                      height: 76,
+                      child: Text("10"),
                     ),
                   ),
                 ),
@@ -80,6 +140,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("1"),
                     ),
                   ),
                 ),
@@ -90,6 +151,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("2"),
                     ),
                   ),
                 ),
@@ -100,6 +162,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("3"),
                     ),
                   ),
                 ),
@@ -110,6 +173,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("4"),
                     ),
                   ),
                 ),
@@ -120,6 +184,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("5"),
                     ),
                   ),
                 ),
@@ -130,6 +195,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("6"),
                     ),
                   ),
                 ),
@@ -140,6 +206,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("7"),
                     ),
                   ),
                 ),
@@ -150,6 +217,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("8"),
                     ),
                   ),
                 ),
@@ -160,6 +228,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("9"),
                     ),
                   ),
                 ),
@@ -170,6 +239,7 @@ class ListViewPage extends StatelessWidget {
                     child: SizedBox(
                       width: 76,
                       height: 76,
+                      child: Text("10"),
                     ),
                   ),
                 ),

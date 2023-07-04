@@ -127,13 +127,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore ScrollView"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore ScrollView",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -149,13 +151,15 @@ class HomePage extends StatelessWidget {
                             );
                           },
                           child: const Card(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                ListTile(
-                                  title: Text("Explore ListView"),
-                                )
-                              ],
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 18, horizontal: 14),
+                              child: Text(
+                                "Explore ListView",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
                             ),
                           ),
                         ),
@@ -164,13 +168,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore TableView"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore TableView",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -178,13 +184,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore Column"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore Column",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -192,13 +200,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore Row"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore Row",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -215,13 +225,15 @@ class HomePage extends StatelessWidget {
                             );
                           },
                           child: const Card(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                ListTile(
-                                  title: Text("Explore Stack"),
-                                )
-                              ],
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 18, horizontal: 14),
+                              child: Text(
+                                "Explore Stack",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
                             ),
                           ),
                         ),
@@ -230,13 +242,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore TextField"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore TextField",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -244,13 +258,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore More"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore More",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -258,13 +274,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore Others"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore Others",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -272,13 +290,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore Further"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore Further",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -286,12 +306,15 @@ class HomePage extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                         child: Card(
-                          child: Column(
-                            children: <Widget>[
-                              ListTile(
-                                title: Text("Explore bodyProperties"),
-                              )
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 18, horizontal: 14),
+                            child: Text(
+                              "Explore BodyProperties",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
                           ),
                         ),
                       ),
