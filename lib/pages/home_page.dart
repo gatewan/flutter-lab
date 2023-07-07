@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/pages/listile_page.dart';
 import 'package:flutter_lab/pages/listview_page.dart';
 import 'package:flutter_lab/pages/stackwidget_page.dart';
 import 'package:flutter_lab/pages/textwidget_page.dart';
@@ -254,17 +255,27 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const Padding(
+                      Padding(
                         padding:
-                            EdgeInsets.symmetric(horizontal: 16, vertical: 5),
-                        child: Card(
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                vertical: 18, horizontal: 14),
-                            child: Text(
-                              "Explore More",
-                              style: TextStyle(
-                                fontSize: 16,
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const ListTilePage()),
+                            );
+                          },
+                          child: const Card(
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 18, horizontal: 14),
+                              child: Text(
+                                "Explore ListTile",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
                               ),
                             ),
                           ),
