@@ -7,6 +7,7 @@ class ListTilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
+        padding: EdgeInsets.all(0),
         child: Column(
           children: [
             ListTile(
@@ -27,72 +28,103 @@ class ListTilePage extends StatelessWidget {
             SizedBox(
               height: 24,
             ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage("assets/images/martis_mole.jpeg"),
-              ),
-              title: Text('Martis'),
-              subtitle: Text(
-                  'Berkat semua kemampuan yang dimilikinya, Martis telah menjadi salah satu hero fighter yang bisa menempati berbagai role. Martis mampu bersaing dengan hero-hero EXP Laner yang terkenal kuat sekalipun.'),
-              trailing: IconButton(
-                icon: Icon(Icons.check),
-                color: Colors.grey,
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text("Editor Mode ON"),
-                      duration: Duration(milliseconds: 500),
+            SizedBox(
+              height: 560   ,
+              width: double.infinity,
+              child: ListView(
+                children: [
+                  ListTile(
+                    contentPadding: EdgeInsets.zero,
+                    leading: CircleAvatar(
+                      radius: 50,
+                      backgroundImage:
+                          AssetImage("assets/images/martis_mole.jpeg"),
                     ),
-                  );
-                },
+                    title: Text(
+                      'Martis',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      'Berkat semua kemampuan yang dimilikinya, Martis telah menjadi salah satu hero fighter yang bisa menempati berbagai role. Martis mampu bersaing dengan hero-hero EXP Laner yang terkenal kuat sekalipun.',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    trailing: IconButton(
+                      icon: Icon(Icons.check),
+                      color: Colors.grey,
+                      onPressed: () {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text("Editor Mode ON"),
+                            duration: Duration(milliseconds: 500),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  Divider(height: 0),
+                  ListTile(
+                    contentPadding: EdgeInsets.zero,
+                    leading: CircleAvatar(
+                      radius: 50,
+                      backgroundImage:
+                          AssetImage("assets/images/yin_aselole.jpg"),
+                    ),
+                    title: Text(
+                      'Yin',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      'Potensi Hero Yin dalam game Mobile Legends, tentu saja menjadi sesuatu yang sangat bagus dan keren sekali. Mempunyai kekuatan yang sangat kuat, bahkan tidak akan mungkin kalian lewatkan begitu saja, melawan musuh tanpa rasa ragu dan akan langsung meninju mereka.',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    trailing: IconButton(
+                      icon: Icon(Icons.check),
+                      color: Colors.grey,
+                      onPressed: () {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text("Editor Mode ON"),
+                            duration: Duration(milliseconds: 500),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  Divider(height: 0),
+                  ListTile(
+                    contentPadding: EdgeInsets.zero,
+                    leading: CircleAvatar(
+                      radius: 50,
+                      backgroundImage:
+                      AssetImage("assets/images/paquito_asiq.jpg"),
+                    ),
+                    title: Text(
+                      'Paquito',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      'Paquito adalah hero Mobile Legends yang memiliki role Fighter. Paquito terinspirasi dari seorang petinju profesional yang berasal dari Filipina bernama Manny Pacquiao.',
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    trailing: IconButton(
+                      icon: Icon(Icons.check),
+                      color: Colors.grey,
+                      onPressed: () {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text("Editor Mode ON"),
+                            duration: Duration(milliseconds: 500),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  Divider(height: 0),
+                ],
               ),
             ),
-            Divider(height: 0),
-            ListTile(
-              leading: CircleAvatar(
-                  child: Image.asset("assets/images/yin_aselole.jpg")),
-              title: Text('Yin'),
-              subtitle: Text(
-                  'Potensi Hero Yin dalam game Mobile Legends, tentu saja menjadi sesuatu yang sangat bagus dan keren sekali. Mempunyai kekuatan yang sangat kuat, bahkan tidak akan mungkin kalian lewatkan begitu saja, melawan musuh tanpa rasa ragu dan akan langsung meninju mereka.'),
-              trailing: IconButton(
-                icon: Icon(Icons.check),
-                color: Colors.grey,
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text("Editor Mode ON"),
-                      duration: Duration(milliseconds: 500),
-                    ),
-                  );
-                },
-              ),
-            ),
-            Divider(height: 0),
-            ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/paquito_asiq")),
-              title: Text('Paquito'),
-              subtitle: Text(
-                  'Paquito adalah hero Mobile Legends yang memiliki role Fighter. Paquito terinspirasi dari seorang petinju profesional yang berasal dari Filipina bernama Manny Pacquiao.'),
-              trailing: IconButton(
-                icon: Icon(Icons.check),
-                color: Colors.grey,
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text("Editor Mode ON"),
-                      duration: Duration(milliseconds: 500),
-                    ),
-                  );
-                },
-              ),
-            ),
-            Divider(height: 0),
           ],
         ),
-        padding: EdgeInsets.symmetric(horizontal: 8),
       ),
     );
   }
